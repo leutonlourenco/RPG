@@ -120,8 +120,9 @@ footer  a {
         overflow-x: hidden;
     }
     .hero h1 {
+        font-size: 1.2rem;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: -.5rem;
     }
     .hero hr {
         margin-top: -.8rem;
@@ -130,10 +131,10 @@ footer  a {
     .conteiner {
         display: flex;
         flex-direction: row;
-        gap: 5rem;
+        gap: 3rem;
         align-items: center;
         justify-content: center;
-        margin-top: 2.7rem;
+        margin-top: 1rem;
         width: 90%;
     }
     /*MODIFICAÇÕES NAS DIVS*/
