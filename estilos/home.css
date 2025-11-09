@@ -63,7 +63,7 @@ body, html {
 .img-Um {
     object-fit: cover;
     height: 14vh;
-    width: 25rem;
+    width: 22rem;
     height: 8rem;
     margin-bottom: 2.5rem;
     transform: rotate(-3deg);border-radius: 30px;
@@ -72,7 +72,7 @@ body, html {
 .img-Dois {
     object-fit: cover;
     transform: rotate(3deg);
-    width: 25rem;
+    width: 22rem;
     height: 8rem;
     margin-bottom: 2.5rem;
     border-radius: 30px;
@@ -81,7 +81,7 @@ body, html {
 .img-Tres {
     object-fit: cover;
     transform: rotate(-3deg);
-    width: 25rem;
+    width: 22rem;
     height: 8rem;
     margin-bottom: 1rem;
     border-radius: 30px;
