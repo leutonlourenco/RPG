@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokusatsu</title>
+    <title>Filhos do Silêncio</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/filhos_do_silencio.css">
+    <style>
+        span {
+            color: rgb(117, 112, 112);
+        }
+    </style>
 </head>
 <body onresize="mudouTamanho()">
-    <header>
+    <header id="topo">
         <h1>Covil dos Condenados</h1>
     </header>
     <span id="burguer"class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -78,7 +84,11 @@
         <img class="img-FilhosDoSilencio" src="imagens/sanguinarias-1.jpg">
         <p class="creditos"><a class="link-externo" href="https://www.canva.com/pt_br/" target="_blank">Canva IA</a></p>
     </main>
-    <button><a href="#topo">Voltar ao topo</a></button>
+    <button>
+        <a href="#topo"><span class="material-symbols-outlined">
+        arrow_shape_up
+        </span></a>
+    </button>
     <script src="JavaScript/script.js"></script>
     <footer>
         <p>Site criado por <a href="">Supaiddaman</a></p>

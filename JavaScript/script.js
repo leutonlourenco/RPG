@@ -28,18 +28,9 @@ mudaCor.style.background = ''
 })
 
 //VOLTA AO TOPO AO CLICAR NO BOTÃO
-document.getElementsByClassName('.voltar').addEventListener('click', () => {
-    const duracao = 2000; //tempo total da animação (em ms)
-    const inicio = window.scrollY; //scrool da barra vertical
-    const comeco = performance.now();
-    function rolar(timestamp) {
-        const progresso = Math.min((timestamp - comeco) / duracao, 1);
-        const easeOut = 1 - Math.pow(1 - progresso, 3); //desacelera suavemente
-        window.scrollTo(0, inicio * (1 - easeOut));
-        if(progresso < 1) requestAnimationFrame(rolar);
-    }
-    requestAnimationFrame(rolar);
-});
-
-
-
+function volar() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
