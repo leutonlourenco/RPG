@@ -123,37 +123,61 @@ footer  a {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    .hero p {
-        display: none;
+    .hero hr {
+        margin-top: -.8rem;
     }
+    /*MODIFICAÇÕES NAS IMAGENS*/
     .conteiner {
         display: flex;
-        width: 50%;
-        padding: 5rem;
-        gap: 5rem;
-        margin-top: 6rem;
-        margin-bottom: 7rem;
         flex-direction: row;
-        justify-content: center;
+        gap: 5rem;
         align-items: center;
+        justify-content: center;
+        margin-top: 2.7rem;
+        width: 90%;
     }
-    .divUm, .divDois, .divTres {
-        margin-bottom: -5rem;
+    /*MODIFICAÇÕES NAS DIVS*/
+    .img-Um {
+        object-fit: cover;
+        height: 14vh;
+        width: 13rem;
+        height: 11rem;
+        margin-bottom: 2.5rem;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
+        transition: all 0.3s ease; 
     }
-    .hero {
-        margin-top: 1rem;
+    .img-Um:hover {
+        transform: rotate(-2deg)scale(1.1);
     }
-    .hero p {
-        font-size: 1.4rem;
+    .img-Dois {
+        object-fit: cover;
+        width: 13rem;
+        height: 11rem;
+        margin-bottom: 2.5rem;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
+        transition: all 0.3s ease; 
     }
-    .img {
-        width: 25vw;
-        height: 50vh;
+    .img-Dois:hover {
+        transform: rotate(2deg)scale(1.1);
+    }
+    .img-Tres {
+        object-fit: cover;
+        width: 13rem;
+        height: 11rem;
+        margin-bottom: 2.5rem;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
+        transition: all 0.3s ease; 
+    }
+    .img-Tres:hover {
+        transform: rotate(-2deg)scale(1.1);
     }
     footer {
-        margin-top: -10rem;
+            margin-top: -2rem;
     }
-    
+        
 }
 @media screen and (min-width: 1001px) {
     body {
