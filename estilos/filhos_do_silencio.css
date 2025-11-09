@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*MOBILE FIRST(TELA PEQUENA)*/
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+:root {
+    --font-texto: Arial, Helvetica, sans-serif;
+    --font-titulos: "Pirata One", system-ui;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: rgb(35, 34, 34);
+    padding: 10px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-titulos);
+    font-size: 2.4em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+span#burguer {
+    background-color: rgb(50, 47, 47);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+ 
+span#burguer:hover {
+    background-color: rgb(79, 74, 74);
+    color: black;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+    background-color: rgb(35, 34, 34);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.699);
+}
+
+menu a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-size: bold;
+    text-decoration: none;
+}
+
+menu a:hover {
+    color: rgb(163, 155, 155);
+    text-decoration: dashed;
+
+}
+main {
+    background-color: white; 
+    width: 90vw;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 6px rgb(29, 28, 28);
+    
+}
+
+main > h1 {
+    color:  rgb(99, 88, 88);
+    font-family: var(--font-titulos);
+    font-size: 2.7em;
+    text-align: center;
+    font-weight: lighter;
+    text-indent: 15px;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+}
+
+main p {
+    font-family: var(--font-texto);
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.7em;
+    padding: 7px 17px;
+}
+
+main h2 {
+    color:  rgb(99, 88, 88);
+    font-family: var(--font-titulos);
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: lighter;
+    margin: 2.5rem 0rem 1rem 0rem;
+}
+
+main h3 {
+    color: white;
+    background-image: linear-gradient(to right, rgb(99, 88, 88),transparent);
+    font-family: var(--font-titulos);
+    font-size: 1.6em;
+    font-weight: lighter;
+    padding-left: 5px;
+    margin: 3rem 0 .5rem 0.9rem;
+}
+
+.img-FilhosDoSilencio {
+    margin-top: 2rem;
+    width: 95%;
+    padding-top: 1rem;
+    display: block;
+    margin: auto;
+}
+
+.link-externo {
+    color: rgb(122, 109, 109);
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*SÍMBOLO DE ÂNCORA DOS LINKS*/
+.link-externo::after {
+    content: '\00A0\1F517';
+}
+
+.link-externo:hover {
+    color: rgb(84, 76, 76);
+}
+
+.strong > a {
+    font-weight: bold;
+    font-size: 1em;
+}
+button {
+    transition: all 0.5s ease;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: 2rem 1rem 0 2rem;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: none; 
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.473);
+}
+button a {
+    text-decoration: none;
+}
+button:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color:rgb(35, 34, 34);
+    color: white;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer  a {
+    color: rgb(162, 157, 157);
+    text-decoration: none;
+}
+
+/*TELA GRANDE*/
+@media screen and (min-width: 800px) {
+    span#burguer {
+        display: none;
+
+    }
+    menu {
+        display: block;
+        padding: 2px;
+        text-align: center;
+    }
+    menu a {
+        display: inline-block;
+    }
+    main {
+        width: 800px;
+    }
+    header h1 {
+        letter-spacing: 10px;
+    }
+}
