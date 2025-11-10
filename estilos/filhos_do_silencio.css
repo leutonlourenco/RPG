@@ -67,9 +67,9 @@ menu a:hover {
 }
 main {
     background-color: white; 
-    width: 90vw;
+    width: 91vw;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 1px 6px rgb(29, 28, 28);
     
@@ -191,7 +191,7 @@ footer  a {
         transform: scale(1.1);
     }
     main {
-        width: 800px;
+        width: 50%;
     }
     header h1 {
         letter-spacing: 10px;

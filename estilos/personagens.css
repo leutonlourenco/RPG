@@ -62,7 +62,7 @@ menu a:hover {
 
 }
 .conteiner {
-    width: 90vw;
+    width: 91vw;
     margin: auto;
     margin-top: 1rem;
     border-radius: 20px 20px 20px 20px;
@@ -191,7 +191,7 @@ button:hover {
     .conteiner {
         width: 50vw;
         margin: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .img-personagem {
         width: 30vw;
