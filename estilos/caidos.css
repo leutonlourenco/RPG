@@ -93,7 +93,7 @@ menu a:hover {
 .personagens {
     background-color: #ffffff;
     box-shadow: 1px 1px 6px rgb(29, 28, 28);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -209,6 +209,7 @@ summary {
         margin: auto;
         margin-top: 1rem;
     }
+    /*
     .img-caidos {
         width: 30vw;
         height: 75vh;
@@ -216,5 +217,14 @@ summary {
     img {
         width: 100%;
         height: 75vh;
+    }
+    */
+    .img-caidos {
+        width: 25vw;
+        height: 55vh;
+    }
+    img {
+        width: 100%;
+        height: 55vh;
     }
 }
