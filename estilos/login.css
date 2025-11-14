@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(7, 154, 154), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(7, 154, 154), rgb(30, 30, 30));
     height: 100vh;
     width: 100vw;
 }
@@ -11,16 +11,16 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-top: -1rem;
-    width: 23rem;
-    height: 36rem;
+    width: 20rem;
+    height: 34rem;
     align-items: center;
     border-radius: 20px;
-    background-image: linear-gradient(to top, rgb(7, 154, 154), rgb(0, 0, 0));
+    background-image: linear-gradient(to top, rgb(7, 154, 154), rgb(30, 30, 30));
 }
 input {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    width: 17rem;
+    width: 16rem;
     padding: .6rem;
     border-radius: 20px;
     border: 1px;
@@ -28,22 +28,22 @@ input {
 }
 .checkbox {
     display: flex;
-    margin-left: -19rem;
+    margin-left: -17rem;
     color: #fff;
 }
 span {
-    margin-left: -8rem;
+    margin-left: -7.5rem;
 }
 .user-photo {
     background-color: black;
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     margin-bottom: 1.2rem;
 }
 .user-photo img {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 button {
@@ -53,4 +53,55 @@ button {
     border-radius: 10px;
     border: 1px;
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -1rem;
+    width: 23rem;
+    height: 36rem;
+    align-items: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, rgb(7, 154, 154), rgb(0, 0, 0));
+    }
+    input {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        width: 17rem;
+        padding: .6rem;
+        border-radius: 20px;
+        border: 1px;
+        outline: none;
+    }
+    .checkbox {
+        display: flex;
+        margin-left: -19rem;
+        color: #fff;
+    }
+    span {
+        margin-left: -8rem;
+    }
+    .user-photo {
+        background-color: black;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-bottom: 1.2rem;
+    }
+    .user-photo img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+    button {
+        background-color: rgb(255, 255, 0);
+        width: 10rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: 1px;
+        margin-bottom: 1rem;
+    }
 }
