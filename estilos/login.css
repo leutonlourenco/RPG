@@ -2,15 +2,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(7, 154, 154), rgb(30, 30, 30));
+    background-image: linear-gradient(to bottom, rgb(7, 154, 154), rgb(0, 0, 0));
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -1rem;
+    margin-bottom: 1rem;
     width: 20rem;
     height: 32rem;
     align-items: center;

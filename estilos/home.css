@@ -6,7 +6,7 @@
 }
 body, html {
     object-fit: contain;
-    background-image: url(../home_img/fundo-2.jpg), linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0)); 
+    background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0)); 
     /* background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0));; */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -118,77 +118,11 @@ footer  a {
 }
 
 /*TESTE PARA TELA DE SMARTPHONES*/
-@media screen and (min-width: 700px) and (max-width: 1080px){
-    body {
-        overflow-y: hidden;
-        background-image: url(../home_img/fundo.jpg);
-    }
-    .hero h1 {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    .hero hr {
-        margin-top: -.8rem;
-    }
-    /*MODIFICAÇÕES NAS IMAGENS*/
-    .conteiner {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
-        width: 90%;
-    }
-    /*MODIFICAÇÕES NAS DIVS*/
-    .img-Um {
-        object-fit: cover;
-        height: 14vh;
-        width: 13rem;
-        height: 11rem;
-        margin-bottom: 2.5rem;
-        border-radius: 30px;
-        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-        transition: all 0.9s ease; 
-    }
-    .img-Um:hover {
-        transform: rotate(-2deg)scale(1.1);
-    }
-    .img-Dois {
-        object-fit: cover;
-        width: 13rem;
-        height: 11rem;
-        margin-bottom: 2.5rem;
-        border-radius: 30px;
-        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-        transition: all 0.3s ease; 
-    }
-    .img-Dois:hover {
-        transform: rotate(2deg)scale(1.1);
-    }
-    .img-Tres {
-        object-fit: cover;
-        width: 13rem;
-        height: 11rem;
-        margin-bottom: 2.5rem;
-        border-radius: 30px;
-        box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-        transition: all 0.3s ease; 
-    }
-    .img-Tres:hover {
-        transform: rotate(-2deg)scale(1.1);
-    }
-    footer {
-            margin-top: -2.5rem;
-    }
-        
-}
-@media screen and (min-width: 1001px) {
+
+@media screen and (min-width: 750px) {
     body {
         overflow-y: hidden;
         overflow-x: hidden;
-        background-image: url(../home_img/fundo.jpg);
     }
     .conteiner {
         display: flex;
