@@ -121,13 +121,12 @@ footer  a {
 @media screen and (min-width: 700px) and (max-width: 1080px){
     body {
         overflow-y: hidden;
-        overflow-x: hidden;
         background-image: url(../home_img/fundo.jpg);
     }
     .hero h1 {
         font-size: 1.2rem;
         margin-top: 1rem;
-        margin-bottom: -.5rem;
+        margin-bottom: 1rem;
     }
     .hero hr {
         margin-top: -.8rem;
@@ -139,7 +138,7 @@ footer  a {
         gap: 3rem;
         align-items: center;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 3rem;
         width: 90%;
     }
     /*MODIFICAÇÕES NAS DIVS*/
@@ -181,7 +180,7 @@ footer  a {
         transform: rotate(-2deg)scale(1.1);
     }
     footer {
-            margin-top: -2rem;
+            margin-top: -2.5rem;
     }
         
 }
