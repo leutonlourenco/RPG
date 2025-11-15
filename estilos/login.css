@@ -13,8 +13,8 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 1rem;
-    width: 20rem;
-    height: 32rem;
+    width: 70%;
+    height: 73%;
     align-items: center;
     border-radius: 20px;
     background-image: linear-gradient(to top, rgb(7, 154, 154), rgb(30, 30, 30));
@@ -38,14 +38,14 @@ span {
 }
 .user-photo {
     background-color: black;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     margin-bottom: 1.2rem;
 }
 .user-photo img {
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
 }
 button {
