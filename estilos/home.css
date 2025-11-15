@@ -6,7 +6,8 @@
 }
 body, html {
     object-fit: contain;
-    background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0));
+    background-image: url(../home_img/fundo-2.jpg), linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0)); 
+    /* background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0));; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -68,7 +69,8 @@ body, html {
     margin-bottom: 2.5rem;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-    transition: all 0.3s ease; 
+    transition: all 0.8s ease;
+    outline: none;
 }
 .img-Um:hover {
     transform: rotate(-2deg)scale(1.1);
@@ -80,7 +82,8 @@ body, html {
     margin-bottom: 2.5rem;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-    transition: all 0.3s ease; 
+    transition: all 0.8s ease; 
+    outline: none;
 }
 .img-Dois:hover {
     transform: rotate(2deg)scale(1.1);
@@ -92,7 +95,8 @@ body, html {
     margin-bottom: 1rem;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-    transition: all 0.3s ease; 
+    transition: all 0.8s ease; 
+    outline: none;
 }
 .img-Tres:hover {
     transform: rotate(-2deg)scale(1.1);
@@ -118,6 +122,7 @@ footer  a {
     body {
         overflow-y: hidden;
         overflow-x: hidden;
+        background-image: url(../home_img/fundo.jpg);
     }
     .hero h1 {
         font-size: 1.2rem;
@@ -146,7 +151,7 @@ footer  a {
         margin-bottom: 2.5rem;
         border-radius: 30px;
         box-shadow: 2px 2px 2px 2px rgba(138, 138, 138, 0.484);
-        transition: all 0.3s ease; 
+        transition: all 0.9s ease; 
     }
     .img-Um:hover {
         transform: rotate(-2deg)scale(1.1);
@@ -184,6 +189,7 @@ footer  a {
     body {
         overflow-y: hidden;
         overflow-x: hidden;
+        background-image: url(../home_img/fundo.jpg);
     }
     .conteiner {
         display: flex;
