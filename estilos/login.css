@@ -13,8 +13,8 @@ form {
     flex-direction: column;
     justify-content: center;
     width: 82%;
-    height: 70%;
-    margin-top: -2rem;
+    height: 60%;
+    margin-bottom: 1.5rem;
     align-items: center;
     border-radius: 20px;
     background-image: linear-gradient(to top, rgb(36, 74, 74), rgb(0, 0, 0));
