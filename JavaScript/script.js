@@ -1,4 +1,4 @@
-//RESPONSÁVEL PELO MENU HAMBURGUER
+//MENU HAMBURGUER EM UMA TELA GRANDE
 function mudouTamanho() {
 if (window.innerWidth >= 769) {
     itens.style.display = 'block'
@@ -18,19 +18,15 @@ if (itens.style.display == 'block') {
 }
 
 
-//MUDANDO A COR DA DIV PERSONAGENS QUANDO O MOUSE PASSA PRO CIMA E QUANDO ELE SAI '#leone'
-let mudaCor = document.querySelector() 
-mudaCor.addEventListener('mouseover', () => {
-mudaCor.style.background = 'red'
-})
-mudaCor.addEventListener('mouseleave', () => {
-mudaCor.style.background = ''
-})
-
-//VOLTA AO TOPO AO CLICAR NO BOTÃO
-function volar() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+//MUDANDO A COR QUANDO O MOUSE PASSA PRO CIMA E QUANDO ELE SAI
+const mudaCor = document.querySelectorAll('.mudaCor') 
+mudaCor.forEach(cor => {
+    cor.addEventListener('mouseover', () => {
+        cor.style.background = 'rgb(255, 0, 0)'
     })
-}
+    cor.addEventListener('mouseout', () => {
+    cor.style.background = ''
+    })
+}); 
+
+
