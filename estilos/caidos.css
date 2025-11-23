@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: rgb(35, 34, 34);
-    height: 3rem;
+    height: 3;
 }
 
 header h1 {
@@ -194,6 +194,7 @@ summary {
     span#burguer {
         display: block;
         background-color: rgb(35, 34, 34);
+        padding-bottom: 1rem;
     }
     
     span#burguer:hover {

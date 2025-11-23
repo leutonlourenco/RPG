@@ -185,6 +185,7 @@ footer  a {
     span#burguer {
         display: block;
         background-color: rgb(35, 34, 34);
+        padding-bottom: 1rem;
     }
     /*TALVEZ NÃO PRECISE DESSE HOVER NO PRINCIPAL*/
     span#burguer:hover {

@@ -188,8 +188,9 @@ button:hover {
     span#burguer {
         display: block;
         background-color: rgb(35, 34, 34);
+        padding-bottom: 1rem;
     }
-    /*TALVEZ NÃO PRECISE DESSAS MODIFICAÇÕES LÁ EM CIMA*/
+    
     span#burguer:hover {
         color: #ccc;
         cursor: pointer;
