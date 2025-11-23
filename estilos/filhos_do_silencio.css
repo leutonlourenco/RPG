@@ -19,63 +19,65 @@ body {
 header {
     background-color: rgb(35, 34, 34);
     padding: 10px;
+    height: 3;
 }
 
-header > h1 {
+header h1 {
     color: white;
     font-family: var(--font-titulos);
-    font-size: 2.4em;
-    letter-spacing: 2px;
+    font-size: 2.4rem;
+    letter-spacing: 10px;
+    padding: .5rem;
     font-weight: bold;
     text-align: center;
 }
 
 span#burguer {
-    background-color: rgb(50, 47, 47);
-    display: block;
+    display: none;
     color: white;
     text-align: center;
     padding: 5px;
 }
  
 span#burguer:hover {
-    background-color: rgb(79, 74, 74);
-    color: black;
     cursor: pointer;
 }
 
 menu {
-    display: none;
+    display: block;
+    padding: 2px;
+    text-align: center;
     background-color: rgb(35, 34, 34);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.699);
 }
 
 menu a {
-    display: block;
-    padding: 5px;
+    display: inline-block;
+    padding: 10px;
     color: white;
     text-align: center;
     font-size: 1.2em;
     font-size: bold;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 menu a:hover {
     color: rgb(163, 155, 155);
     text-decoration: dashed;
+    transform: scale(1.1);
 
 }
 main {
-    background-color: white; 
-    width: 91vw;
+    width: 50vw;
     margin: auto;
     margin-top: 1rem;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     box-shadow: 1px 1px 6px rgb(29, 28, 28);
     
 }
 
-main > h1 {
+main h1 {
     color:  rgb(99, 88, 88);
     font-family: var(--font-titulos);
     font-size: 2.7em;
@@ -137,7 +139,7 @@ main h3 {
     color: rgb(84, 76, 76);
 }
 
-.strong > a {
+.strong a {
     font-weight: bold;
     font-size: 1em;
 }
@@ -169,28 +171,38 @@ footer  a {
     text-decoration: none;
 }
 
-/*TELA GRANDE*/
-@media screen and (min-width: 800px) {
-    span#burguer {
-        display: none;
+/*MOBILE*/
+@media screen and (max-width: 580px) {
+    header {
+        background-color: rgb(35, 34, 34);
+        padding: 10px;
+    }
 
-    }
-    menu {
-        display: block;
-        padding: 2px;
-        text-align: center;
-    }
-    menu a {
-        display: inline-block;
-        transition: all 0.5s ease;
-    }
-    menu a:hover {
-        transform: scale(1.1);
-    }
-    main {
-        width: 50%;
-    }
     header h1 {
-        letter-spacing: 10px;
+        letter-spacing: 2px;
+    }
+
+    span#burguer {
+        display: block;
+        background-color: rgb(35, 34, 34);
+    }
+    /*TALVEZ NÃO PRECISE DESSE HOVER NO PRINCIPAL*/
+    span#burguer:hover {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    menu {
+        display: none;
+    }
+
+    menu a {
+        display: block;
+        padding: 5px;
+    }
+
+    main {
+        width: 91vw;
+        
     }
 }

@@ -15,57 +15,61 @@
 header {
     background-color: rgb(35, 34, 34);
     padding: 10px;
+    height: 3;
 }
 
-header > h1 {
+header h1 {
     color: white;
     font-family: var(--font-titulos);
     font-size: 2.4rem;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
+    padding: .5rem;
     font-weight: bold;
     text-align: center;
 }
 
 span#burguer {
-    background-color: rgb(50, 47, 47);
-    display: block;
+    display: none;
     color: white;
     text-align: center;
     padding: 5px;
 }
  
 span#burguer:hover {
-    background-color: rgb(79, 74, 74);
-    color: black;
     cursor: pointer;
 }
 
 menu {
-    display: none;
+    display: block;
+    padding: 2px;
+    text-align: center;
     background-color: rgb(35, 34, 34);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.699);
 }
 
 menu a {
-    display: block;
-    padding: 5px;
+    display: inline-block;
+    padding: 10px;
     color: white;
     text-align: center;
     font-size: 1.2em;
     font-size: bold;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 menu a:hover {
     color: rgb(163, 155, 155);
     text-decoration: dashed;
+    transform: scale(1.1);
 
 }
+
 .conteiner {
-    width: 91vw;
+    width: 50vw;
     margin: auto;
     margin-top: 1rem;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .conteiner p {
@@ -92,24 +96,29 @@ menu a:hover {
     border-radius: 10px 10px 10px 10px;
 }
 
-div.descricao > p {/*descrição dos personagens*/
-    line-height: 7px;
-    padding-top: .5rem;
-    padding-bottom: 1rem;
+div.descricao {/*descrição dos personagens*/
+    background-image: linear-gradient(to right, rgb(66, 66, 66),transparent);
+    font-style: italic;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-left: 10px;
 }
 
 .img-personagem {
-    width: 70%;
-    height: 42vh;
+    width: 25vw;
+    height: 55vh;
     margin: auto;
     margin-bottom: 1.2rem;
     padding: .6rem;
     box-shadow: 5px 5px 8px rgba(12, 4, 4, 0.849);
 }
+
 img {
     width: 100%;
-    height: 42vh;
+    height: 55vh;
 }
+
 .link-externo {
     padding-bottom: 10px;
     font-size: 0.8em;
@@ -125,7 +134,7 @@ img {
     color: rgb(122, 109, 109);
 }
 
-.strong > a {
+.strong a {
     font-weight: bold;
     font-size: 1em;
 }
@@ -155,6 +164,7 @@ summary {
     font-size: 1.1rem;
     margin: 1rem;
 }
+
 button {
     transition: all 0.5s ease;
     height: 3rem;
@@ -165,40 +175,45 @@ button {
     border: none; 
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.473);
 }
+
 button:hover {
     transform: scale(1.1);
 }
 
-@media screen and (min-width:700px){
+@media screen and (max-width:580px){ 
     header h1 {
-        letter-spacing: 10px;
+        letter-spacing: 2px;
     }
+
     span#burguer {
+        display: block;
+        background-color: rgb(35, 34, 34);
+    }
+    /*TALVEZ NÃO PRECISE DESSAS MODIFICAÇÕES LÁ EM CIMA*/
+    span#burguer:hover {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+    menu {
         display: none;
     }
-    menu {
-        display: block;
-        padding: 2px;
-        text-align: center;
-    }
+
     menu a {
-        display: inline-block;
-        transition: all 0.5s ease;
+        display: block;
+        padding: 5px;
     }
-    menu a:hover {
-        transform: scale(1.1);
-    }
+
     .conteiner {
-        width: 50vw;
-        margin: auto;
-        margin-top: 1rem;
+        width: 91vw;
     }
+
     .img-personagem {
-        width: 25vw;
-        height: 55vh;
+        width: 70%;
+        height: 42vh;
     }
     img {
         width: 100%;
-        height: 55vh;
+        height: 42vh;
     }
 }
