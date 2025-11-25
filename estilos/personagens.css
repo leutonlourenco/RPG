@@ -206,7 +206,11 @@ button:hover {
     }
 
     .conteiner {
-        width: 91vw;
+        width: 100%;
+    }
+    
+    .personagens {
+        border-radius: 0;
     }
 
     .img-personagem {

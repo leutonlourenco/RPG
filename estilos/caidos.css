@@ -183,6 +183,9 @@ summary {
 
 /*MOBILE*/
 @media screen and (max-width:580px){
+    body, html {
+        overflow-x: hidden;
+    }
     header {
         padding: 10px;
     }
@@ -217,7 +220,10 @@ summary {
 
     }
     .conteiner {
-        width: 90vw;
+        width: 100%;
+    }
+    .personagens {
+        border-radius: 0;
     }
     .img-caidos {
         width: 70%;
