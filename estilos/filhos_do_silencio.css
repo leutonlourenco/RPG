@@ -20,9 +20,12 @@ header {
     background-color: rgb(35, 34, 34);
     padding: 10px;
     height: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header h1 {
+/* header h1 {
     color: white;
     font-family: var(--font-titulos);
     font-size: 2.4rem;
@@ -30,6 +33,9 @@ header h1 {
     padding: .5rem;
     font-weight: bold;
     text-align: center;
+} */
+.logo {
+    width: 8rem;
 }
 
 span#burguer {
