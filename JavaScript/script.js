@@ -1,22 +1,16 @@
-//MENU HAMBURGUER EM UMA TELA GRANDE
-function mudouTamanho() {
-if (window.innerWidth >= 769) {
-    itens.style.display = 'block'
-} else {
-    itens.style.display = 'none'
-}
-}
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+const overlay = document.getElementById("overlay");
 
-//MOSTRA OS ITENS AO CLICAR NO MENU HAMBUERGUER
-function clickMenu() {
-var itens = document.getElementById("itens");
-if (itens.style.display == 'block') {
-    itens.style.display = 'none';
-} else {
-    itens.style.display = 'block';
-}
-}
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
 
+overlay.addEventListener("click", () => {
+  nav.classList.remove("active");
+  overlay.classList.remove("active");
+});
 
 //MUDANDO A COR QUANDO O MOUSE PASSA PRO CIMA E QUANDO ELE SAI
 const mudaCor = document.querySelectorAll('.mudaCor') 

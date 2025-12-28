@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filhos do Silêncio</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/filhos_do_silencio.css">
     <style>
@@ -15,18 +14,22 @@
     </style>
 </head>
 <body onresize="mudouTamanho()">
-    <header id="topo">
-        <img class="logo" src="imagens/logo.jpeg" alt="Logo da Página">
-        <!-- <h1>Covil dos Condenados</h1> -->
+    <header class="header">
+    <div class="menu">
+        <img src="imagens/logo.jpeg" alt="Logo" class="logo">
+            <nav class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="filhos_do_silencio.html">Filhos do Silêncio</a>
+            <a href="personagens.html">Personagens</a>
+            <a href="caidos.html">Caídos</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
     </header>
-    <span id="burguer"class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <menu id="itens">
-        <a href="index.html">Home</a>
-        <a href="filhos_do_silencio.html">Filhos do Silêncio</a>
-        <a href="personagens.html">Personagens</a>
-        <a href="caidos.html">Caídos</a>
-        <a href="login.html">Login</a>
-    </menu>
+    <div class="overlay" id="overlay"></div>
     <main>
         <h1>Quem somos?</h1>
         <p>Em meados do ano 2024, sob o chamado da aventura, formou-se o grupo conhecido como <strong>Filhos do Silêncio</strong>. Unidos não pelo acaso, mas pelo destino, nossos membros encontraram-se nas vastas terras do <a href="https://discord.com/" target="_blank" class="link-externo"><strong>Discord</strong></a>, onde as vozes ecoam como cânticos de batalha.</p> 
