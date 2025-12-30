@@ -14,16 +14,22 @@
     </style>
 </head>
 <body onresize="mudouTamanho()">
-    <header id="topo">
-        <h1>Covil dos Condenados</h1>
+    <header class="header">
+        <div class="menu">
+            <img src="imagens/logo.jpeg" alt="Logo" class="logo">
+                <nav class="nav" id="nav">
+                <a href="index.html">Home</a>
+                <a href="filhos_do_silencio.html">Filhos do Silêncio</a>
+                <a href="personagens.html">Personagens</a>
+                <a href="caidos.html">Caídos</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
     </header>
-    <span id="burguer"class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <menu id="itens">
-        <a href="index.html">Home</a>
-        <a href="filhos_do_silencio.html">Filhos do Silêncio</a>
-        <a href="personagens.html">Personagens</a>
-        <a href="caidos.html">Caídos</a>
-    </menu>
+    <div class="overlay" id="overlay"></div>
     <div class="conteiner">
         <div class="personagens">
             <h2>Ixia?</h2>
