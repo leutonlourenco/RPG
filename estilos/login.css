@@ -14,7 +14,7 @@ form {
     justify-content: center;
     width: 80%;
     height: 56%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     align-items: center;
     border-radius: 20px;
     background-image: linear-gradient(to top, rgb(36, 74, 74), rgb(0, 0, 0));
@@ -30,7 +30,7 @@ input {
 }
 .checkbox {
     display: flex;
-    margin-left: -16rem;
+    margin-left: -14rem;
     color: #fff;
 }
 span {
@@ -41,8 +41,7 @@ span {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.2rem;
 }
 .user-photo img {
     width: 7rem;

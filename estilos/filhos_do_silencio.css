@@ -27,7 +27,12 @@ body {
     top: 0;
     z-index: 1001;
 }
-
+.title {
+    font-family: var(--font-titulos);
+    color: #fff;
+    letter-spacing: 3px;
+    margin-left: 2.1rem;
+}
 .menu {
     max-width: 1200px;
     margin: auto;
@@ -211,7 +216,7 @@ footer  a {
     /* MEMU HAMBURGUER */
     .hamburger {
         display: block;
-        margin-top: -.6rem;
+        margin-top: -.2rem;
         box-shadow: none;
     }
 
