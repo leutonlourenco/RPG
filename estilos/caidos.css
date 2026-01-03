@@ -140,6 +140,7 @@ div.descricao {/*descrição dos personagens*/
 }
 
 .img-caidos {
+    position: relative;
     width: 25vw;
     height: 55vh;
     margin: auto;
@@ -217,14 +218,12 @@ summary {
     .title {
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 1.2rem;
-        letter-spacing: 5px; 
-        margin-left: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 8px; 
+        margin-left: 3rem;
     }
     .logo {
-        margin-left: 0;
-        object-fit: cover;
-        height: 2.5rem;
+        display: none;
     }
     .hamburger {
         display: block;
