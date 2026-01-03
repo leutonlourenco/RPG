@@ -31,8 +31,9 @@ body {
 .title {
     font-family: var(--font-titulos);
     color: #fff;
-    letter-spacing: 3px;
-    margin-left: 2.1rem;
+    font-size: 2.5rem;
+    letter-spacing: 15px; 
+    margin-left: 1rem;
 }
 
 .menu {
@@ -45,8 +46,9 @@ body {
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
+    object-fit: cover;
+    height: 60px;
+    width: 80px;
     margin-left: 1rem;
 }
 
@@ -212,6 +214,13 @@ summary {
 
 /*MOBILE*/
 @media (max-width:768px){
+    .title {
+        font-family: var(--font-titulos);
+        color: #fff;
+        font-size: 1.5rem;
+        letter-spacing: 5px; 
+        margin-left: 1rem;
+    }
     .hamburger {
         display: block;
         margin-top: -.2rem;
