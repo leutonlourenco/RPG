@@ -218,6 +218,8 @@ button:hover {
         color: #fff;
         font-size: 1.5rem;
         letter-spacing: 5px;
+        margin-right: 0;
+        margin-left: 1rem;
         /* margin-left: 3rem; */
     }
 

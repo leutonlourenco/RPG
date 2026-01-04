@@ -161,7 +161,8 @@ button {
         color: #fff;
         font-size: 1.5rem;
         letter-spacing: 5px;
-        /* margin-left: 3rem; */
+        margin-right: 0;
+        margin-left: 1rem;
     }
     .logo {
         display: none;
@@ -211,6 +212,7 @@ button {
     form {
         width: 80%;
         height: 60%;
+        margin-bottom: 3rem;
     }
     /* MEMU HAMBURGUER */
 
