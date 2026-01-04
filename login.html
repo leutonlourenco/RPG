@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
-    <form action="#" method="post">
-        <div class="user-photo">
-            <img src="imagens/aslavi.jpeg" alt="">
+    <header class="header">
+        <div class="menu">
+            <img src="imagens/logo.jpeg" alt="Logo" class="logo">
+            <h1 class="title">Filhos do Silêncio</h1>
+            <nav class="nav" id="nav">
+                <a href="index.html">Home</a>
+                <a href="filhos_do_silencio.html">Filhos do Silêncio</a>
+                <a href="personagens.html">Personagens</a>
+                <a href="caidos.html">Caídos</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
-        </label>
-        <label>
-            <input type="email" name="email" placeholder=" user name or email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)">
-        </label>
-        <label>
-            <input type="password" name="password" placeholder=" your password" required min="8">
-        </label>
-    
-        <label class="checkbox">
-            <input type="checkbox">
-            <span>Remember me</span>
-        </label>
-        <label>
-            <button>SING UP</button>
-        </label>
-    </form>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <section class="login">
+        <form action="#" method="post">
+            <div class="user-photo">
+                <img src="imagens/aslavi.jpeg" alt="">
+            </div>
+            </label>
+            <label>
+                <input type="email" name="email" placeholder=" user name or email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)">
+            </label>
+            <label>
+                <input type="password" name="password" placeholder=" your password" required min="8">
+            </label>
+        
+            <label class="checkbox">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+            <label>
+                <button>SING UP</button>
+            </label>
+        </form>
+    </section>
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>

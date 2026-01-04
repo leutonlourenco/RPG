@@ -1,19 +1,116 @@
+@charset "UTF-8";
+/*MOBILE FIRST(TELA PEQUENA)*/
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+:root {
+    --font-texto: Arial, Helvetica, sans-serif;
+    --font-titulos: "Pirata One", system-ui;
+    --bg-dark: rgb(25, 24, 24);
+    --bg-menu: #161616;
+    --text-light: #fff;
+    --accent: #8a2be2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
+    background-image: linear-gradient(to bottom, rgb(36, 74, 74), rgb(0, 0, 0));
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* COMEÇO DO MENU */
+/* Header */
+.header {
+    background: var(--bg-dark);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.title {
+    font-family: var(--font-titulos);
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 10px; 
+    margin-right: 15rem;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-left: -5rem;
+}
+
+/* Desktop menu */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.nav a:hover {
+    color: rgb(163, 155, 155);
+    text-decoration: dashed;
+    transform: scale(1.1);
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+/* FINAL DO MENU */
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(36, 74, 74), rgb(0, 0, 0));
-    height: 100vh;
-    width: 100vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    height: 90vh;
 }
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    height: 56%;
+    width: 30%;
+    height: 60%;
     margin-bottom: 2rem;
     align-items: center;
     border-radius: 20px;
@@ -34,7 +131,8 @@ input {
     color: #fff;
 }
 span {
-    margin-left: -7rem;
+    margin-top: -0.2rem;
+    margin-left: -6.5rem;
 }
 .user-photo {
     background-color: black;
@@ -57,8 +155,66 @@ button {
     font-weight: bold;
 }
 
-/*
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .title {
+        font-family: var(--font-titulos);
+        color: #fff;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        /* margin-left: 3rem; */
+    }
+    .logo {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        margin-top: -.2rem;
+        box-shadow: none;
+    }
+
+    .nav {
+        position: fixed;
+        inset: 0 auto 0 0;
+        width: 280px;
+        background: var(--bg-menu);
+        padding: 50px 25px;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1001;
+    }
+
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+
+    /* Overlay */
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    form {
+        width: 80%;
+        height: 60%;
+    }
+    /* MEMU HAMBURGUER */
+
+    /*
     form {
     display: flex;
     flex-direction: column;
@@ -107,5 +263,5 @@ button {
         border: 1px;
         margin-bottom: 1rem;
     }
+    */
 }
-*/
