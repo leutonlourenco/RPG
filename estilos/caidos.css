@@ -185,27 +185,13 @@ button {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    margin: 0 1rem 0 2rem;
+    margin: 2 1rem 0 2rem;
     background-color: rgba(255, 255, 255, 0.01);
     border: none; 
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.473);
 }
 button:hover {
     transform: scale(1.1);
-}
-footer {
-    /* background-color:rgb(35, 34, 34); */
-    color: rgb(79, 74, 74);
-    margin-top: 1rem;
-    font-size: 1.2rem;  
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-footer  a {
-    color: rgb(162, 157, 157);
-    text-decoration: none;
 }
 
 a {/*links gerais*/ 
@@ -220,16 +206,31 @@ summary {
     margin-bottom: 1rem;
 }
 
+footer {
+    /* background-color:rgb(35, 34, 34); */
+    color: rgb(57, 53, 53);;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;  
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer  a {
+    color: rgb(162, 157, 157);
+    text-decoration: none;
+}
 
 /*MOBILE*/
 @media (max-width:768px){
     .title {
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         letter-spacing: 5px;
         margin-right: 0;
-        margin-left: 1rem;
+        margin-left: .5rem;
     }
     .logo {
         display: none;
