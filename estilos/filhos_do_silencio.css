@@ -222,10 +222,10 @@ footer  a {
     .title {
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         letter-spacing: 5px;
         margin-right: 0;
-        /* margin-left: 1rem; */
+        margin-left: .5rem;
     }
     .logo {
         display: none;
