@@ -159,10 +159,10 @@ button {
     .title {
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 5px;
         margin-right: 0;
-        margin-left: 1rem;
+        margin-left: .5rem;
     }
     .logo {
         display: none;
@@ -170,6 +170,7 @@ button {
     .hamburger {
         display: block;
         margin-top: -.2rem;
+        margin-right: -4rem;
         box-shadow: none;
     }
 
