@@ -109,10 +109,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
-    height: 60%;
-    margin-bottom: 2rem;
     align-items: center;
+    margin-top: 6rem;
+    width: 30%;
     border-radius: 20px;
     background-image: linear-gradient(to top, rgb(36, 74, 74), rgb(0, 0, 0));
 }
@@ -156,6 +155,13 @@ button {
 }
 
 @media (max-width: 768px) {
+    body, html {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    header {
+        height: 0rem;
+    }
     .title {
         font-family: var(--font-titulos);
         color: #fff;
