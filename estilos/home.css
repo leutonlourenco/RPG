@@ -55,6 +55,9 @@ body, html {
     margin: auto;
 }
 /*MODIFICAÇÕES NO CONTEINER*/
+.conteiner a {
+    text-decoration: none;
+}
 .conteiner {
     background-color: aqua;
     display: flex;
@@ -74,10 +77,13 @@ body, html {
 } */
 /*MODIFICAÇÕES NAS DIVS*/
 .img-Um {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     background-size: cover;
     background-image: url('../home_img/caidos.webp');
     width: 20rem;
-    height: 8rem;
+    height: 9rem;
     margin-bottom: 1.5rem;
     border-radius: 30px;
     /*bordas sobrepondo uma a outra com tamanhos diferentes para criar o efeito neon*/
@@ -89,10 +95,13 @@ body, html {
     transform: rotate(-2deg)scale(1.1);
 }
 .img-Dois {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     background-image: url('../home_img/grupo_rpg.jpg');
     background-size: cover;
     width: 20rem;
-    height: 8rem; 
+    height: 9rem; 
     margin-bottom: 1.5rem;
     border-radius: 30px;
     box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
@@ -103,10 +112,13 @@ body, html {
     transform: rotate(2deg)scale(1.1);
 }
 .img-Tres {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     background-image: url('../home_img/arte.jpg');
     background-size: cover;
     width: 20rem;
-    height: 8rem;
+    height: 9rem;
     margin-bottom: 1rem;
     border-radius: 30px;
     box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
@@ -116,12 +128,26 @@ body, html {
 .img-Tres:hover {
     transform: rotate(-2deg)scale(1.1);
 }
+.img-des {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font: var(--font-titulos);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    font-weight: bolder;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+}
 .loginButton {
     width: 20rem;
     display: block;
     margin-bottom: 1.5rem;
     border-radius: 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: var(--font-titulos);
     text-align: center;
     text-transform: uppercase;
