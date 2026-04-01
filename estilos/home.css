@@ -26,19 +26,21 @@ body, html {
 }
 .hero {
     width: 100vw;
-    height: 25vh;
+    height: 13vh;
+    background-color: wheat;
     padding-top: .7rem;
     text-align: center;
 }
 .hero h1 {
-    display: none;
-    margin: 1rem 3rem 0rem 3rem;
+    margin: 1rem;
     /* margin: 1rem 3rem 1rem 3rem; */
     font-size: 1.6rem;
     color: #fff;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 .hero p {
+    display: none;
     font-size: 1.1rem;
     text-align: center;
     margin: 1.6rem;
@@ -54,11 +56,10 @@ body, html {
 }
 /*MODIFICAÇÕES NO CONTEINER*/
 .conteiner {
+    background-color: aqua;
     display: flex;
     width: 95%;
-    height: 50vh;
-    margin-top: 6rem;
-    margin-bottom: 3.5rem;
+    height: 85vh;
     justify-content: center;
     align-items: center;
     /* margin-top: 10rem;
@@ -73,8 +74,8 @@ body, html {
 } */
 /*MODIFICAÇÕES NAS DIVS*/
 .img-Um {
-    object-fit: cover;
-    height: 14vh;
+    background-size: cover;
+    background-image: url('../home_img/caidos.webp');
     width: 20rem;
     height: 8rem;
     margin-bottom: 1.5rem;
@@ -88,9 +89,10 @@ body, html {
     transform: rotate(-2deg)scale(1.1);
 }
 .img-Dois {
-    object-fit: cover;
+    background-image: url('../home_img/grupo_rpg.jpg');
+    background-size: cover;
     width: 20rem;
-    height: 8rem;
+    height: 8rem; 
     margin-bottom: 1.5rem;
     border-radius: 30px;
     box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
@@ -101,7 +103,8 @@ body, html {
     transform: rotate(2deg)scale(1.1);
 }
 .img-Tres {
-    object-fit: cover;
+    background-image: url('../home_img/arte.jpg');
+    background-size: cover;
     width: 20rem;
     height: 8rem;
     margin-bottom: 1rem;
