@@ -26,7 +26,7 @@ body, html {
 }
 .hero {
     width: 100vw;
-    height: 13vh;
+    height: 11vh;
     background-color: wheat;
     padding-top: .7rem;
     text-align: center;
@@ -146,6 +146,7 @@ body, html {
 .loginButton {
     width: 20rem;
     display: block;
+    margin-top: -1rem;
     margin-bottom: 1.5rem;
     border-radius: 30px;
     font-size: 1.5rem;
