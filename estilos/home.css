@@ -62,6 +62,7 @@ body, html {
     background-color: aqua;
     display: flex;
     width: 95%;
+    height: 70vh;
     flex: auto;
     justify-content: center;
     align-items: center;
