@@ -83,7 +83,7 @@ body, html {
     align-items: end;
     background-size: cover;
     background-image: url('../home_img/caidos.webp');
-    width: 20rem;
+    width: 18rem;
     height: 9rem;
     margin-bottom: 1.5rem;
     border-radius: 30px;
@@ -101,7 +101,7 @@ body, html {
     align-items: end;
     background-image: url('../home_img/grupo_rpg.jpg');
     background-size: cover;
-    width: 20rem;
+    width: 18rem;
     height: 9rem; 
     margin-bottom: 1.5rem;
     border-radius: 30px;
@@ -118,7 +118,7 @@ body, html {
     align-items: end;
     background-image: url('../home_img/arte.jpg');
     background-size: cover;
-    width: 20rem;
+    width: 18rem;
     height: 9rem;
     margin-bottom: 1rem;
     border-radius: 30px;
