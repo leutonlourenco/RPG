@@ -23,11 +23,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('../home_img/background.jpg');
+    background-size: cover;
 }
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100vw;
     height: 11vh;
-    background-color: wheat;
     padding-top: .7rem;
     text-align: center;
 }
@@ -39,15 +43,16 @@ body, html {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.hero p {
+.descricao p {
     display: none;
     font-size: 1.1rem;
     text-align: center;
     margin: 1.6rem;
     color: #fff;
-    margin-top: 1rem;
+    margin: 2rem 5rem 0 5rem;
 }
-.hero hr {
+.descricao hr {
+    display: none;
     width: 40vw;
     height: .2rem;
     border: none;
@@ -59,10 +64,9 @@ body, html {
     text-decoration: none;
 }
 .conteiner {
-    background-color: aqua;
     display: flex;
     width: 95%;
-    flex: auto;
+    height: 85vh;
     justify-content: center;
     align-items: center;
     /* margin-top: 10rem;
@@ -143,10 +147,8 @@ body, html {
     background-color: #ffffff;
 }
 .loginButton {
-    width: 20rem;
+    width: 5rem;
     display: block;
-    margin-top: -2rem;
-    margin-bottom: 1.5rem;
     border-radius: 30px;
     font-size: 1.5rem;
     font-family: var(--font-titulos);
@@ -162,7 +164,6 @@ body, html {
 }
 
 footer {
-    background-color: violet;
     width: 100%;
     margin-top: -15px;
     color: rgb(239, 234, 234);
@@ -186,21 +187,21 @@ footer  a {
     }
     .hero {
         margin-top: 1rem;
+        display: flex;
     }
     .hero h1 {
         display: block;
         font-size: 3rem;
     }
-    .hero p {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+    .descricao p, .descricao hr {
+        display: block;
+        margin-top: 2rem;
     }
     .conteiner {
         display: flex;
         width: 50%;
         padding: 5rem;
         gap: 5rem;
-        margin-top: 1rem;
         flex: 1;
         flex-direction: row;
         justify-content: center;
@@ -209,17 +210,13 @@ footer  a {
     
     /*MODIFICAÇÕES NAS DIVS*/
     .img-Um, .img-Dois {
-        width: 25rem;
+        width: 15rem;
         height: 17rem;
     }
     .img-Tres {
         object-fit: cover;
         margin-top: -1.6rem;
-        width: 25rem;
+        width: 15rem;
         height: 17rem;
-    }
-   
-    footer {
-        margin-top: -2rem;
     }
 }
