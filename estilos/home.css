@@ -62,7 +62,6 @@ body, html {
     background-color: aqua;
     display: flex;
     width: 95%;
-    height: 70vh;
     flex: auto;
     justify-content: center;
     align-items: center;
@@ -165,6 +164,7 @@ body, html {
 footer {
     background-color: violet;
     width: 100%;
+    margin-top: -15px;
     color: rgb(239, 234, 234);
     font-size: 1.2rem;
     padding: 5px;
