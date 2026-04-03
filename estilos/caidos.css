@@ -94,18 +94,6 @@ body {
     cursor: pointer;
     display: none;
 }
-/* FINAL DO MENU */
-
-/* .banner {
-    margin-top: 10px;
-    display: block;
-    height: 60vh;
-    max-width: 300px;
-    color: white;
-    background-color: red;
-    margin-left: 30px;
-} */
-
 .conteiner {
     width: 50vw;
     margin: auto;
@@ -136,20 +124,10 @@ body {
     margin-bottom: 1rem;
     border-radius: 10px 10px 10px 10px;
 }
-
-div.descricao {/*descrição dos personagens*/
-    background-image: linear-gradient(to right, rgb(66, 66, 66),transparent);
-    font-style: italic;
-    font-size: 1em;
-    color: rgb(255, 255, 255);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 10px;
-}
-
 .img-caidos {
     position: relative;
-    width: 25vw;
+    /* width: 25vw; */
+    max-width: 320px;
     height: 55vh;
     margin: auto;
     margin-bottom: 1.2rem;
@@ -286,7 +264,7 @@ footer  a {
         border-radius: 0;
     }
     .img-caidos {
-        width: 62%;
+        width: 280px;
         height: 42vh;
     }
     img {
