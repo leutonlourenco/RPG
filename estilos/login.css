@@ -159,7 +159,6 @@ button {
     .hamburger {
         display: block;
         margin-top: .4rem;
-        margin-right: -4rem;
         box-shadow: none;
     }
 
@@ -197,5 +196,8 @@ button {
     .overlay.active {
         opacity: 1;
         pointer-events: all;
+    }
+    .form {
+        min-width: 350px;
     }
 }
