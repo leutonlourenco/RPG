@@ -25,35 +25,26 @@ body {
 /* COMEÇO DO MENU */
 /* Header */
 .header {
-    background: var(--bg-dark);
     position: sticky;
     top: 0;
     z-index: 1001;
 }
 
 .title {
+    display: none;
     font-family: var(--font-titulos);
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 10px; 
-    margin-right: 15rem;
 }
 
 .menu {
     max-width: 1200px;
     margin: auto;
-    padding: 12px 20px;
+    padding: 20px 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-
-.logo {
-    height: 50px;
-    width: 50px;
-    margin-left: -5rem;
-}
-
 /* Desktop menu */
 .nav {
     display: flex;
@@ -63,7 +54,7 @@ body {
 .nav a {
     color: var(--text-light);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     position: relative;
     transition: all 0.5s ease;
 }
@@ -101,57 +92,52 @@ body {
 .login {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 90vh;
+    margin: 160px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
-    width: 30%;
-    border-radius: 20px;
-    background-image: linear-gradient(to top, rgb(36, 74, 74), rgb(0, 0, 0));
+    height: 300px;
+    min-width: 400px;
+    background-color: #ffffff27;
+    /* background-image: linear-gradient(to top, rgb(36, 74, 74), rgb(0, 0, 0)); */
+}
+.form_info {
+    display: flex;
+    flex-direction: column;
+}
+.form_info span {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
 }
 input {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     width: 15rem;
     padding: .6rem;
-    border-radius: 20px;
     border: 1px;
     outline: none;
 }
-.checkbox {
+.check_login {
     display: flex;
-    margin-left: -14rem;
     color: #fff;
+    gap: 30px;
 }
-span {
-    margin-top: -0.2rem;
-    margin-left: -6.5rem;
-}
-.user-photo {
-    background-color: black;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    margin-bottom: 2.2rem;
-}
-.user-photo img {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
+span a {
+    color: white;
+    text-decoration: none;
 }
 button {
     background-color: rgb(255, 255, 0);
-    width: 6rem;
+    margin-top: -.4rem;
+    width: 5rem;
+    font-size: 15px;
     height: 2rem;
-    border-radius: 10px;
     border: 1px;
-    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -159,23 +145,20 @@ button {
         overflow-y: hidden;
         overflow-x: hidden;
     }
-    header {
-        height: 0rem;
+    .menu {
+        justify-content: space-evenly;
     }
     .title {
+        display: block;
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 2rem;
         letter-spacing: 5px;
         margin-right: 0;
-        margin-left: .5rem;
-    }
-    .logo {
-        display: none;
     }
     .hamburger {
         display: block;
-        margin-top: -.2rem;
+        margin-top: .4rem;
         margin-right: -4rem;
         box-shadow: none;
     }
@@ -215,62 +198,4 @@ button {
         opacity: 1;
         pointer-events: all;
     }
-
-    form {
-        width: 80%;
-        height: 60%;
-        margin-bottom: 3rem;
-    }
-    /* MEMU HAMBURGUER */
-
-    /*
-    form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -1rem;
-    width: 23rem;
-    height: 36rem;
-    align-items: center;
-    border-radius: 20px;
-    background-image: linear-gradient(to top, rgb(7, 154, 154), rgb(0, 0, 0));
-    }
-    input {
-        margin-bottom: 1rem;
-        font-size: 1.1rem;
-        width: 17rem;
-        padding: .6rem;
-        border-radius: 20px;
-        border: 1px;
-        outline: none;
-    }
-    .checkbox {
-        display: flex;
-        margin-left: -19rem;
-        color: #fff;
-    }
-    span {
-        margin-left: -8rem;
-    }
-    .user-photo {
-        background-color: black;
-        width: 7rem;
-        height: 7rem;
-        border-radius: 50%;
-        margin-bottom: 1.2rem;
-    }
-    .user-photo img {
-        width: 7rem;
-        height: 7rem;
-        border-radius: 50%;
-    }
-    button {
-        background-color: rgb(255, 255, 0);
-        width: 10rem;
-        height: 2rem;
-        border-radius: 10px;
-        border: 1px;
-        margin-bottom: 1rem;
-    }
-    */
 }
