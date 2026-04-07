@@ -189,7 +189,8 @@ footer  a {
     }
     .hero {
         margin-top: 1rem;
-        display: flex;
+        display: flex;    
+        padding: 0 10rem 0 10rem;
     }
     .hero h1 {
         display: block;
@@ -202,7 +203,6 @@ footer  a {
     .conteiner {
         display: flex;
         width: 50%;
-        padding: 5rem;
         gap: 5rem;
         flex: 1;
         flex-direction: row;
