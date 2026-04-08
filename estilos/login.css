@@ -171,15 +171,15 @@ footer  a {
     }
     .title {
         display: block;
-        margin-right: 2rem;
         font-family: var(--font-titulos);
         color: #fff;
         font-size: 1.6rem;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
     }
     .hamburger {
         display: block;
         box-shadow: none;
+        margin-left: 2.5rem;
     }
 
     .nav {
