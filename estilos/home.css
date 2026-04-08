@@ -41,6 +41,7 @@ body, html {
     /* margin: 1rem 3rem 1rem 3rem; */
     font-size: 1.6rem;
     color: #fff;
+    margin: auto auto;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -172,7 +173,6 @@ body, html {
 footer {
     width: 100%;
     margin-bottom: 1.6rem;
-    color: rgb(239, 234, 234);
     font-size: 1.5rem;
     padding: 5px;
     text-align: center;
@@ -199,6 +199,7 @@ footer  a {
     .hero h1 {
         display: block;
         font-size: 3rem;
+        letter-spacing: 15px;
     }
     .descricao p, .descricao hr {
         display: block;
