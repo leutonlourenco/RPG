@@ -39,7 +39,7 @@ body, html {
     margin: 1rem;
     font-family: var(--font-titulos);
     /* margin: 1rem 3rem 1rem 3rem; */
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -156,13 +156,17 @@ body, html {
     text-align: center;
     text-transform: uppercase;
     padding: .5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     background-color: orangered;
     box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
     transition: all 0.3s ease; 
 }
 .loginButton:hover {
     transform: rotate(-2deg)scale(1.1);
+}
+.loginButton a {
+    text-decoration: none;
+    color: #fff;
 }
 
 footer {

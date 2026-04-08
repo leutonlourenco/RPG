@@ -152,7 +152,7 @@ button {
         display: block;
         font-family: var(--font-titulos);
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.6rem;
         letter-spacing: 5px;
         margin-right: 0;
     }
@@ -198,6 +198,7 @@ button {
         pointer-events: all;
     }
     .form {
-        min-width: 350px;
+        min-width: 325px;
+        height: 250;
     }
 }
