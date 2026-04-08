@@ -151,11 +151,11 @@ body, html {
     width: 5rem;
     display: block;
     border-radius: 30px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-titulos);
     text-align: center;
     text-transform: uppercase;
-    padding: .5rem;
+    padding: .3rem;
     margin-right: 1.5rem;
     background-color: orangered;
     box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
@@ -171,16 +171,16 @@ body, html {
 
 footer {
     width: 100%;
-    margin-top: -15px;
+    margin-bottom: 1.2rem;
     color: rgb(239, 234, 234);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 5px;
     text-align: center;
     font-weight: normal;
 }
 
 footer  a {
-    color: rgb(162, 157, 157);
+    color: #fff;
     text-decoration: none;
 }
 

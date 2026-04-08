@@ -16,7 +16,8 @@
     padding: 0px;
 }
 body {
-    background-image: linear-gradient(to bottom, rgb(36, 74, 74), rgb(0, 0, 0));
+    background-image: url('../home_img/old_tree_wallpaper_by_deligaris-d6q8la1.jpg');
+    /* background-image: linear-gradient(to bottom, rgb(36, 74, 74), rgb(0, 0, 0)); */
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
@@ -31,9 +32,11 @@ body {
 }
 
 .title {
-    display: none;
+    display:block;
     font-family: var(--font-titulos);
     color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
     letter-spacing: 10px; 
 }
@@ -43,7 +46,8 @@ body {
     margin: auto;
     padding: 20px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 /* Desktop menu */
 .nav {
@@ -92,7 +96,8 @@ body {
 .login {
     display: flex;
     justify-content: center;
-    margin: 160px;
+    align-items: center;
+    height: 70vh;
 }
 
 .form {
@@ -124,8 +129,8 @@ input {
 }
 .check_login {
     display: flex;
-    color: #fff;
-    gap: 30px;
+    color: #ffffff;
+    gap: 40px;
 }
 span a {
     color: white;
@@ -139,6 +144,19 @@ button {
     height: 2rem;
     border: 1px;
 }
+footer {
+    width: 100%;
+    color: rgb(239, 234, 234);
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+}
+
+footer  a {
+    color: #fff;
+    text-decoration: none;
+}
 
 @media (max-width: 768px) {
     body, html {
@@ -146,6 +164,8 @@ button {
         overflow-x: hidden;
     }
     .menu {
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     .title {
@@ -154,7 +174,7 @@ button {
         color: #fff;
         font-size: 1.6rem;
         letter-spacing: 5px;
-        margin-right: 0;
+        margin-top: 1.2rem;
     }
     .hamburger {
         display: block;
