@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 65vh;
 }
 
 .form {
@@ -130,7 +130,7 @@ input {
 .check_login {
     display: flex;
     color: #ffffff;
-    gap: 40px;
+    gap: 30px;
 }
 span a {
     color: white;
