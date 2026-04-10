@@ -222,3 +222,8 @@ footer  a {
         height: 250;
     }
 }
+@media screen and (orientation: landscape) {
+    body {
+        display: none;
+    }
+}
