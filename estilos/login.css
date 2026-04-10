@@ -222,14 +222,15 @@ footer  a {
         height: 250;
     }
 }
-/* @media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) {
     body {
         display: none;
     }
-} */
-@media screen and (orientation: landscape) {
+}
+
+/* @media screen and (orientation: landscape) {
     body::before {
-        content: 'Recomendado o uso da tela na vertical';
+        content: "Recomendado o uso da tela na vertical";
         display: flex;
         justify-content: center;
         align-items: center;
@@ -241,4 +242,4 @@ footer  a {
     * {
         display: none;
     }
-}
+} */

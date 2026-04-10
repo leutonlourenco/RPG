@@ -294,3 +294,8 @@ footer  a {
         height: 90%;
     }
 }
+@media screen and (orientation: landscape) {
+    body {
+        display: none;
+    }
+}
