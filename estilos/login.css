@@ -167,7 +167,7 @@ footer  a {
     .menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .title {
         display: block;
@@ -179,7 +179,7 @@ footer  a {
     .hamburger {
         display: block;
         box-shadow: none;
-        margin-left: 2.5rem;
+        margin-top: .1rem;
     }
 
     .nav {

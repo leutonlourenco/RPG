@@ -36,5 +36,8 @@ const btn = document.getElementById('backToTop');
     btn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
+//AÇÃO QUE IMPEDE A TELA HORIZONTAL DO MOBILE
+if (screen.orientation && screen.orientation.lock) {
+  screen.orientation.lock('portrait')
+}
 
