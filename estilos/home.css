@@ -5,230 +5,175 @@
     --font-titulos: "Pirata One", system-ui;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body, html {
-    object-fit: contain;
-    background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0)); 
-    /* background-image: linear-gradient(to top, rgb(44, 41, 41),rgb(0, 0, 0));; */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../home_img/old_tree_wallpaper_by_deligaris-d6q8la1.jpg');
-    background-size: cover;
-}
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 11vh;
-    padding-top: .7rem;
-    text-align: center;
-}
-.hero h1 {
-    margin: 1rem;
-    font-family: var(--font-titulos);
-    /* margin: 1rem 3rem 1rem 3rem; */
-    font-size: 1.6rem;
-    color: #fff;
-    margin: auto auto;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-.descricao p {
-    display: none;
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 1.6rem;
-    color: #fff;
-    margin: 2rem 5rem 0 5rem;
-}
-.descricao hr {
-    display: none;
-    width: 40vw;
-    height: .2rem;
-    border: none;
-    background-color: rgb(6, 207, 6);
-    margin: auto;
-}
-/*MODIFICAÇÕES NO CONTEINER*/
-.conteiner a {
-    text-decoration: none;
-}
-.conteiner {
-    display: flex;
-    /* width: 95%; */
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 10rem;
-    margin-bottom: 3rem; */
-    flex-direction: column;
-    width: min(1200px, 100%);
-    margin: auto;
-    padding: 1rem;
-}
-/*MODIFICAÇÕES NAS IMAGENS*/
-/* .conteiner {
-    margin-bottom: 2rem;
-    margin-top: 4.2rem;
-    width: 95%;
-} */
-/*MODIFICAÇÕES NAS DIVS*/
-.img-Um {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background-size: cover;
-    background-image: url('../home_img/caidos.webp');
-    width: 18rem;
-    height: 9rem;
-    margin-bottom: 1.5rem;
-    border-radius: 30px;
-    /*bordas sobrepondo uma a outra com tamanhos diferentes para criar o efeito neon*/
-    box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
-    transition: all 0.3s ease;
-    outline: none;
-}
-.img-Um:hover {
-    transform: rotate(-2deg)scale(1.1);
-}
-.img-Dois {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background-image: url('../home_img/grupo_rpg.jpg');
-    background-size: cover;
-    width: 18rem;
-    height: 9rem; 
-    margin-bottom: 1.5rem;
-    border-radius: 30px;
-    box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
-    transition: all 0.3s ease; 
-    outline: none;
-}
-.img-Dois:hover {
-    transform: rotate(2deg)scale(1.1);
-}
-.img-Tres {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background-image: url('../home_img/arte.jpg');
-    background-size: cover;
-    width: 18rem;
-    height: 9rem;
-    margin-bottom: 1rem;
-    border-radius: 30px;
-    box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
-    transition: all 0.3s ease; 
-    outline: none;
-}
-.img-Tres:hover {
-    transform: rotate(-2deg)scale(1.1);
-}
-.img-des {
-    width: 100%;
-    text-align: center;
-    color: black;
-    font: var(--font-titulos);
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    padding: 0.2rem;
-    font-weight: bolder;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: #ffffff;
-}
-.loginButton {
-    width: 5rem;
-    display: block;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    font-family: var(--font-titulos);
-    text-align: center;
-    text-transform: uppercase;
-    padding: .3rem;
-    margin-right: 1.5rem;
-    background-color: orangered;
-    box-shadow: 0 0 5px #7b78787b, 0 0 10px #7b78787b, 0 0 15px #7b78787b, 0 0 30px #3f37377b;
-    transition: all 0.3s ease; 
-}
-.loginButton:hover {
-    transform: rotate(-2deg)scale(1.1);
-}
-.loginButton a {
-    text-decoration: none;
-    color: #fff;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-footer {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.6rem;
-    font-size: 1.5rem;
-    padding: 5px;
-    text-align: center;
-    font-weight: normal;
-    color: rgb(162, 157, 157);
+:root{
+    --verde:#03ff74;
+    --bg:#0d0d0d;
+    --card:#161616;
+    --texto:#f5f5f5;
+    --cinza:#9e9e9e;
 }
 
-/*TESTE PARA TELA DE SMARTPHONES*/
-
-@media screen and (min-width: 750px) {
-    body {
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    .hero {
-        margin-top: 1rem;
-        display: flex;    
-        padding: 0 10rem 0 10rem;
-    }
-    .hero h1 {
-        display: block;
-        font-size: 3rem;
-        letter-spacing: 15px;
-    }
-    .descricao p, .descricao hr {
-        display: block;
-        margin-top: 2rem;
-    }
-    .conteiner {
-        display: flex;
-        width: 50%;
-        gap: 5rem;
-        flex: 1;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    /*MODIFICAÇÕES NAS DIVS*/
-    .img-Um, .img-Dois {
-        width: 15rem;
-        height: 17rem;
-    }
-    .img-Tres {
-        object-fit: cover;
-        margin-top: -1.6rem;
-        width: 15rem;
-        height: 17rem;
-    }
+body{
+    background:var(--bg);
+    color:var(--texto);
+    font-family:Segoe UI, sans-serif;
 }
-/* @media screen and (orientation: landscape) {
-    body {
-        display: none;
-    }
-} */
+
+.hero{
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:2rem;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    ),
+    url("../home_img/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:clamp(3rem, 8vw, 6rem);
+    margin-bottom:1rem;
+}
+
+.hero span{
+    color:var(--verde);
+}
+
+.hero p{
+    font-size:clamp(1rem, 2vw, 1.3rem);
+    color:#d8d8d8;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn-login{
+    display:inline-block;
+
+    margin-top:2rem;
+
+    padding:1rem 2rem;
+
+    border-radius:10px;
+
+    background:var(--verde);
+
+    color:#000;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn-login:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    width:min(1400px,95%);
+    margin:auto;
+}
+
+.sobre{
+    text-align:center;
+    padding:5rem 0;
+}
+
+.sobre h2{
+    margin-bottom:1rem;
+    font-size:2rem;
+}
+
+.sobre p{
+    max-width:700px;
+    margin:auto;
+    color:var(--cinza);
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(320px,1fr)
+    );
+
+    gap:2rem;
+
+    padding-bottom:5rem;
+}
+
+.card{
+    text-decoration:none;
+    color:inherit;
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-image{
+    height:240px;
+
+    background-size:cover;
+    background-position:center;
+}
+
+.img-caidos{
+    background-image:url("../home_img/caidos.webp");
+}
+
+.img-grupo{
+    background-image:url("../home_img/arte.jpg");
+}
+
+.img-personagens{
+    background-image:url("../home_img/grupo_rpg.jpg");
+}
+
+.card h3{
+    padding:1.5rem 1.5rem .5rem;
+}
+
+.card p{
+    padding:0 1.5rem 1.5rem;
+    color:var(--cinza);
+}
+
+footer{
+    text-align:center;
+    padding:2rem;
+    border-top:1px solid #222;
+}
