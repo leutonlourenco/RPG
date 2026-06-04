@@ -39,4 +39,6 @@ const btn = document.getElementById('backToTop');
 //AÇÃO QUE IMPEDE A TELA HORIZONTAL DO MOBILE
 screen.orientation.lock('portrait');
 
+window.addEventListener("resize", mudouTamanho);
+
 

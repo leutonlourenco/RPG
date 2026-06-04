@@ -152,12 +152,9 @@ footer {
     padding: 5px;
     text-align: center;
     font-weight: normal;
+    color: rgb(162, 157, 157);
 }
 
-footer  a {
-    color: #fff;
-    text-decoration: none;
-}
 
 @media (max-width: 768px) {
     body, html {
@@ -222,11 +219,11 @@ footer  a {
         height: 250;
     }
 }
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
     body {
         display: none;
     }
-}
+} */
 
 /* @media screen and (orientation: landscape) {
     body::before {

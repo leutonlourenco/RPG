@@ -97,10 +97,11 @@ body {
 /* FINAL DO MENU */
 
 .conteiner {
-    width: 50vw;
-    margin: auto;
     margin-top: 1rem;
     border-radius: 20px;
+    width: min(1000px, 100%);
+    margin: auto;
+    padding: 1rem;
 }
 
 .conteiner p {
@@ -196,15 +197,18 @@ footer {
     padding: 10px;
     text-align: center;
     font-weight: bold;
+    color: rgb(162, 157, 157);
 }
 
-footer  a {
-    color: rgb(162, 157, 157);
-    text-decoration: none;
+.material-symbols-outlined {
+    color: rgb(117, 112, 112);
 }
 
 
 @media (max-width:768px){ 
+    body {
+        overflow-x: hidden;
+    }
     .title {
         font-family: var(--font-titulos);
         color: #fff;
@@ -263,6 +267,7 @@ footer  a {
     /* MEMU HAMBURGUER */
     .conteiner {
         width: 100%;
+        margin-left: -15px;
     }
     
     .personagens {
@@ -278,8 +283,8 @@ footer  a {
         height: 42vh;
     }
 }
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
     body {
         display: none;
     }
-}
+} */
