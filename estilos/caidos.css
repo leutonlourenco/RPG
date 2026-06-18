@@ -15,83 +15,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* MENU */
-/* .header {
-    background: var(--bg-dark);
-    position: sticky;
-    top: 0;
-    z-index: 1001;
-} */
 
-/* .title {
-    font-family: var(--font-titulos);
-    color: #fff;
-    font-size: 2rem;
-    letter-spacing: 10px; 
-    margin-right: 15rem;
-} */
-
-/* .menu {
-    max-width: 1200px;
-    margin: auto;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-/* Desktop menu */
-/* .nav {
-    display: flex;
-    gap: 25px;
-} */
-
-/* .nav a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 1.1rem;
-    position: relative;
-    transition: all 0.5s ease;
-}
-.nav a:hover {
-    color: rgb(163, 155, 155);
-    text-decoration: dashed;
-    transform: scale(1.1);
-} */
-
-/* .nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background: var(--accent);
-    transition: 0.3s;
-}
-
-.nav a:hover::after {
-    width: 100%;
-} */
-
-/* Hamburger */
-/* .hamburger {
-    background: none;
-    border: none;
-    color: var(--text-light);
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-} */
-/* MENU */
 .header-caidos{
 
     min-height:60vh;
 
     background:
     linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.85)
+        rgba(34, 34, 34, 0.845),
+        rgb(0, 0, 0)
     ),
     url("../img/memorial.jpg");
 
@@ -155,11 +87,13 @@
 }
 .hero-tag{
 
-    color:#8a2be2;
+    color:#5c2b8b;
 
     letter-spacing:3px;
 
     margin-bottom:1rem;
+
+    font-size:1.2rem;
 }
 .hero-content h1{
 
@@ -179,95 +113,19 @@
     color:#d9d9d9;
 
     line-height:1.8;
+    
 }
 .hero-divider{
 
     margin-top:2rem;
 
-    color:#8a2be2;
+    color:#5c2b8b;
+
 
     letter-spacing:15px;
 
     font-size:1.4rem;
 }
-
-
-
-
-
-
-
-/* .hero-caidos{
-    width:100%;
-    min-height:50vh;
-    background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85) ),
-    url("../img/caidos-banner.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-bottom:4rem;
-}
-.hero-overlay{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:2rem;
-}
-.hero-content{
-
-    width:min(900px,90%);
-
-    text-align:center;
-}
-.hero-tag{
-    display:inline-block;
-    padding:.5rem 1rem;
-    border-radius:50px;
-    background:#8a2be2;
-    color:white;
-    font-size:.9rem;
-    margin-bottom:1rem;
-    letter-spacing:1px;
-}
-.hero-content h1{
-    font-size:clamp(3rem,7vw,5rem);
-    color:white;
-    margin-bottom:1rem;
-}
-.hero-content p{
-    color:#d9d9d9;
-    font-size:1.2rem;
-    line-height:1.7;
-    max-width:700px;
-    margin:auto;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container{
     width:min(1400px,95%);
@@ -285,22 +143,7 @@
     line-height: 25px;
 }
 
-/* .fallen-card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.35);
-} */
-
-/* .fallen-img{
-    flex:0 0 320px;
-}
-
-.fallen-img img {
-    width:500px;
-    height:600px;
-    display:block;
-    object-fit:cover;
-} */
- .fallen-img{
+.fallen-img{
     display: flex;
     align-items: center;
     flex: 0 0 300px;
@@ -327,10 +170,9 @@
     margin-bottom:.3rem;
 }
 
-.fallen-content > span{
-    display:block;
+.fallen-content  span{
     margin-bottom:1rem;
-    color:#8a2be2;
+    color:#5c2b8b;
     font-weight:bold;
 }
 
@@ -357,19 +199,25 @@ summary{
     min-width:120px;
 }
 
-button {
-    transition: all 0.5s ease;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    margin: 2rem 1rem 0 2rem;
-    background-color: rgba(255, 255, 255, 0.01);
-    border: none; 
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.473);
+#btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rgba(114, 114, 114, 0.438);
+    color:#ffffffa1;
+    font-size:2rem;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    z-index:1000;
 }
-button:hover {
-    transform: scale(1.1);
-}
+
 
 summary {
     color: rgb(95, 89, 89);
