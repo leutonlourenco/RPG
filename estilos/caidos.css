@@ -16,13 +16,18 @@
     box-sizing: border-box;
 }
 
+/* body {
+    background:#1b1b1b;
+} */
+
+
 .header-caidos{
 
     min-height:60vh;
 
     background:
     linear-gradient(
-        rgba(34, 34, 34, 0.845),
+        rgba(60, 60, 60, 0.845),
         rgb(0, 0, 0)
     ),
     url("../img/memorial.jpg");
@@ -45,10 +50,11 @@
 
     padding:1.5rem 5%;
 
-    background:rgba(0,0,0,.2);
+    background:rgba(46, 46, 46, 0.685);
 
     backdrop-filter:blur(10px);
 }
+
 .nav-links{
 
     display:flex;
