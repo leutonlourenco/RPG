@@ -40,7 +40,41 @@
 
     flex-direction:column;
 }
+
+/* HERO */
+
+.hero-header{
+
+    min-height:60vh;
+    
+    width: 100vw;
+
+    background:
+    linear-gradient(
+    rgba(15,15,15,.75),
+    rgba(25,25,25,.95)
+    ),
+    url("../img/personagens-banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* MENU */
 .menu{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:25px 5%;
 
     display:flex;
 
@@ -48,18 +82,29 @@
 
     align-items:center;
 
-    padding:1.5rem 5%;
+    position:relative;
+}
 
-    background:rgba(46, 46, 46, 0.685);
+.logo{
 
-    backdrop-filter:blur(10px);
+    font-family:var(--font-titulos);
+
+    font-size:2rem;
+
+    color:white;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
 }
 
 .nav-links{
 
     display:flex;
 
-    gap:2rem;
+    align-items:center;
+
+    gap:30px;
 }
 
 .nav-links a{
@@ -68,12 +113,71 @@
 
     text-decoration:none;
 
+    font-size:1rem;
+
+    position:relative;
+
     transition:.3s;
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#8a2be2;
+
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
 }
 
 .nav-links a:hover{
 
     color:#8a2be2;
+}
+
+.login-btn{
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    border:1px solid #8a2be2;
+}
+
+.login-btn:hover{
+
+    background:#8a2be2;
+
+    color:white;
+}
+
+.hamburger{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
 }
 .hero-content{
 
@@ -269,7 +373,60 @@ footer {
         height:600px;
         object-fit: cover;
     }
+    /* MENU */
+    .menu {
+        display: flex;
+    }
+    .hamburger{
 
+        display:block;
+
+        z-index:1002;
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:280px;
+
+        height:100vh;
+
+        background:#161616;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:flex-start;
+
+        gap:25px;
+
+        padding:100px 30px;
+
+        transition:.3s;
+
+        z-index:1001;
+    }
+
+    .nav-links.active{
+
+        right:0;
+    }
+
+    .logo /*TITÚTLO*/{
+
+        font-size:1.4rem;
+
+        letter-spacing:2px;
+    }
+    /* MENU */
     /* .title {
         font-family: var(--font-titulos);
         color: #fff;
